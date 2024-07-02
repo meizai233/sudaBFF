@@ -1,0 +1,11 @@
+{
+  "name": "lib-core",
+  "version": "1.0.0",
+  "description": "bff core",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && npx tsc"
+  },
+  "author": "suda",
+  "license": "ISC"
+}
