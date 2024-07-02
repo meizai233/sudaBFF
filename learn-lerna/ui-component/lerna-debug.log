@@ -1,0 +1,13 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   scope: 'example-web',
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '6.6.2',
+0 silly argv   '$0': '/Users/suda/Documents/work/study/sudaBFF/learn-lerna/ui-component/node_modules/.bin/lerna',
+0 silly argv   pkg: 'ui-web'
+0 silly argv }
+1 notice cli v6.6.2
+2 verbose rootPath /Users/suda/Documents/work/study/sudaBFF/learn-lerna/ui-component
+3 error ui-web: No versions available for ui-web
+3 error     at pickManifest (/Users/suda/Documents/work/study/sudaBFF/learn-lerna/ui-component/node_modules/npm-pick-manifest/lib/index.js:140:25)
+3 error     at module.exports (/Users/suda/Documents/work/study/sudaBFF/learn-lerna/ui-component/node_modules/npm-pick-manifest/lib/index.js:187:16)
