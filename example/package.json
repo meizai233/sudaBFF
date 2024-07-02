@@ -1,14 +1,16 @@
 {
-  "name": "example",
+  "name": "suda-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development nodemon -e ts,ejs --exec ts-node -T ./app.ts",
+    "lerna": "npx lerna bootstrap"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lerna": "^8.1.5"
+    "lerna": "^8.1.5",
+    "suda-core": "file:../lib"
   }
 }

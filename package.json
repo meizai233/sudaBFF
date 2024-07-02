@@ -4,11 +4,16 @@
   "description": "Backend-for-Frontend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development nodemon -e ts,ejs --exec ts-node -T ./example/app.ts",
+    "lerna": "npx lerna bootstrap",
+    "test": " ts-node -T ./example/app2.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lerna": "^8.1.5"
+    "lerna": "^6.6.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
   }
 }

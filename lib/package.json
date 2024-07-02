@@ -1,5 +1,5 @@
 {
-  "name": "lib-core",
+  "name": "suda-core",
   "version": "1.0.0",
   "description": "bff core",
   "main": "index.js",
