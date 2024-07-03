@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "CommonJS",
+    "lib": ["dom", "ES2015"], //控制类型定义 dom es6
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    /* Generates corresponding '.map' file. */
+    "outDir": "./dist"
+  },
+  "include": ["./"]
+}
