@@ -11,9 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "koa": "^2.15.3",
     "lerna": "^6.6.2"
   },
   "devDependencies": {
+    "@types/node": "^20.14.9",
     "ts-node": "^10.9.2"
   }
 }

@@ -17,3 +17,4 @@ const student = new Student("张三", 20);
 console.log(student.greet("Hello, world!"));
 const sum_1 = require("./sum");
 (0, sum_1.default)(1, 2);
+//# sourceMappingURL=person.js.map

@@ -8,4 +8,4 @@ exports.default = addNumbers;
 // 调用函数并打印结果
 const result = addNumbers(5, 10);
 console.log(result); // 输出应该是 15
-//# sourceMappingURL=sum.js.map
+//# sourceMappingURL=src.js.map

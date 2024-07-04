@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "CommonJS",
+    "lib": ["dom", "ES2015"], //控制类型定义 dom es6
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    /* Generates corresponding '.map' file. */
+    "outDir": "./dist",
+    "rootDir": "./",
+    "rootDirs": ["./", "./dist"],
+    "strict": true,
+    "noImplicitAny": false,
+    "alwaysStrict": true,
+    "noImplicitThis": false,
+    "moduleResolution": "Node",
+    // 查找第三方库的一些类型声明
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceRoot": "./",
+    "mapRoot": "",
+    // "inlineSourceMap": true,
+    "noEmitOnError": true,
+    "listEmittedFiles": true,
+    "pretty": true,
+    "version": true,
+    "skipLibCheck": true
+  },
+  "include": ["./", "../lib"], // "files": ["index.d.ts"],
+  "exclude": ["node_modules", "./dist"]
+}
