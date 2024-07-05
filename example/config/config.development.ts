@@ -4,5 +4,6 @@ export default (app) => {
     devServer: {
       port: 8888,
     },
+    router: "file",
   };
 };

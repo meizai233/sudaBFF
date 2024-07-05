@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon -e ts,ejs --exec ts-node -T ./example/app.ts",
+    "dev:debug": "NODE_ENV=development nodemon -e ts,ejs --exec ts-node -T ./example/app.ts --inspect",
     "lerna": "npx lerna bootstrap",
     "test": " ts-node -T ./example/app2.ts"
   },
