@@ -4,6 +4,7 @@ export default (app) => {
     devServer: {
       port: 8888,
     },
-    router: "file",
+    // router: "file",
+    router: "koa-router",
   };
 };
