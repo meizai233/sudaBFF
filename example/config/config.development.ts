@@ -6,5 +6,7 @@ export default (app) => {
     },
     // router: "file",
     router: "koa-router",
+    // 静态服务器配置
+    static: {},
   };
 };
