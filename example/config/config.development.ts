@@ -4,9 +4,15 @@ export default (app) => {
     devServer: {
       port: 8888,
     },
-    // router: "file",
-    router: "koa-router",
+    router: "file",
+    // router: "koa-router",
     // 静态服务器配置
     static: {},
+    // cors配置
+    cors: {
+      // origin: "http://127.0.0.1:4000",
+      origin: "*",
+      maxAge: 0,
+    },
   };
 };
