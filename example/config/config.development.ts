@@ -14,5 +14,6 @@ export default (app) => {
       origin: "*",
       maxAge: 0,
     },
+    middlewares: ["one", "two"],
   };
 };

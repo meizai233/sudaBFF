@@ -32,7 +32,6 @@ export default async (app) => {
     options.keepHeadersOnError = options.keepHeadersOnError === undefined || !!options.keepHeadersOnError;
 
     return async function cors(ctx, next) {
-      debugger;
       console.log("ctx", ctx);
 
       const requestOrigin = ctx.get("Origin");

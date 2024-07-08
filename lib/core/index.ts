@@ -4,7 +4,7 @@ import path from "path";
 // import * as path from "path";
 import { deepMerge, getHooks } from "./utils";
 import { Hook, App } from "./types";
-const hooks = ["cors", "lift", "router", "static"];
+const hooks = ["custom-middlewares", "cors", "lift", "router", "static"];
 
 // parmas 环境
 type Parmas = {
