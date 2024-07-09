@@ -15,5 +15,18 @@ export default (app) => {
       maxAge: 0,
     },
     middlewares: ["one", "two"],
+    login: {
+      needLogin: true,
+      secret: "my_secret",
+      cookieOption: {
+        signed: true,
+        expires: new Date(Date.now() + 10 * 60 * 1000),
+        secure: true,
+        httpOnly: true,
+        domain: "http://localhost:8888/",
+        path: "/",
+        sameSite: "Strict",
+      },
+    },
   };
 };
