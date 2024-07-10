@@ -28,5 +28,8 @@ export default (app) => {
         sameSite: "Strict",
       },
     },
+    view: {
+      // extension: "ejs",
+    },
   };
 };

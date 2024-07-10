@@ -8,7 +8,7 @@ export default async (app) => {
 
   if (loginConfig?.needLogin) {
     // 检查是否已经登陆
-    const checkLogin = (ctx, next) => {
+    const checkLogin = async (ctx, next) => {
       const token = ctx.cookies.get("suda_token");
       if (!token) {
         // 生成jwt 加密 设置cookie 种在当前域名
@@ -24,7 +24,9 @@ export default async (app) => {
           // 此处可以查询数据库
           ctx.user = user;
         }
-        next();
+        // 需要等后面中间件的异步函数执行完毕 才能执行next后面的语句
+        // 如果不加await router中还没有解析完ejs 就已经执行next后面的语句并返回了
+        await next();
       }
       console.log("洋葱");
     };

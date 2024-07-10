@@ -71,6 +71,16 @@ export default async (app) => {
       // 如果匹配到 则执行
       if (routerMap[key]) {
         await routerMap[key](ctx);
+        // await ctx.render("404");
+      } else {
+        try {
+          await ctx.render("404");
+          console.log("ctxxx", ctx.body);
+          return;
+        } catch (e) {
+          console.log("eee", e);
+        }
+        // ctx.body = "nonono";
       }
     });
   } else if (router === "koa-router") {
