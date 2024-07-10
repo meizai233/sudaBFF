@@ -4,5 +4,6 @@ export default {
   handler: async (ctx) => {
     const { username } = ctx.user;
     ctx.body = "my name is " + username;
+    throw Error("Error!!!!!");
   },
 };

@@ -70,7 +70,12 @@ export default async (app) => {
 
       // 如果匹配到 则执行
       if (routerMap[key]) {
-        await routerMap[key](ctx);
+        try {
+          await routerMap[key](ctx);
+        } catch (e) {
+          console.log("eee", e);
+          await ctx.render("500", { error: e });
+        }
         // await ctx.render("404");
       } else {
         try {
