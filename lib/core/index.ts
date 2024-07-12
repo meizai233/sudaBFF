@@ -5,7 +5,7 @@ import path from "path";
 import { deepMerge, getHooks } from "./utils";
 import { Hook, App } from "./types";
 // const hooks = ["custom-middlewares", "cors", "lift", "view", "router", "login", "static"];
-const hooks = ["custom-middlewares", "cors", "static", "body-parser", "view", "login", "router", "lift"];
+const hooks = ["custom-middlewares", "cors", "static", "body-parser", "view", "mysql", "login", "router", "lift"];
 // parmas 环境
 type Parmas = {
   appPath: string;

@@ -31,5 +31,11 @@ export default (app) => {
     view: {
       // extension: "ejs",
     },
+    mysql: {
+      host: "localhost",
+      user: "root",
+      password: "123455",
+      database: "koadb",
+    },
   };
 };
