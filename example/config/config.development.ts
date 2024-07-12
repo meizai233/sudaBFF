@@ -19,9 +19,9 @@ export default (app) => {
       needLogin: true,
       secret: "my_secret",
       cookieOption: {
-        signed: true,
+        // signed: true,
         expires: new Date(Date.now() + 10 * 60 * 1000),
-        secure: true,
+        // secure: true,
         httpOnly: true,
         domain: "http://localhost:8888/",
         path: "/",
