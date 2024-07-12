@@ -1,3 +1,5 @@
+import path from "path";
+
 export default (app) => {
   return {
     // 开发环境配置
@@ -36,6 +38,9 @@ export default (app) => {
       user: "root",
       password: "123455",
       database: "koadb",
+    },
+    log: {
+      dir: path.join(__dirname, "../log"),
     },
   };
 };

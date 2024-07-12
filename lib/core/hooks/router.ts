@@ -80,11 +80,8 @@ export default async (app) => {
       } else {
         try {
           await ctx.render("404");
-          console.log("ctxxx", ctx.body);
           return;
-        } catch (e) {
-          console.log("eee", e);
-        }
+        } catch (e) {}
         // ctx.body = "nonono";
       }
     });
